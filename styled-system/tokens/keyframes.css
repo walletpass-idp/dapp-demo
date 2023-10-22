@@ -1,28 +1,47 @@
 @layer tokens {
     @keyframes spin {
-        to {
+        100% {
             transform: rotate(360deg)
         }
     }
-    @keyframes ping {
-        75%, 100% {
-            transform: scale(2);
+    @keyframes hide {
+        0% {
+            opacity: 1
+        }
+        100% {
             opacity: 0
         }
     }
-    @keyframes pulse {
-        50% {
-            opacity: .5
+    @keyframes slideIn {
+        from {
+            transform: translateX(calc(100% + 16px))
+        }
+        to {
+            transform: translateX(0)
         }
     }
-    @keyframes bounce {
-        0%, 100% {
-            transform: translateY(-25%);
-            animation-timing-function: cubic-bezier(0.8,0,1,1)
+    @keyframes swipeOut {
+        from {
+            transform: translateX(var(--radix-toast-swipe-end-x))
         }
-        50% {
-            transform: none;
-            animation-timing-function: cubic-bezier(0,0,0.2,1)
+        to {
+            transform: translateX(calc(100% + 16px))
+        }
+    }
+    @keyframes slideDown {
+        from {
+            height: 0
+        }
+        to {
+            height: var(--radix-accordion-content-height)
+        }
+    }
+    @keyframes slideUp {
+        from {
+            height: var(--radix-accordion-content-height)
+        }
+        to {
+            height: 0
         }
     }
 }
