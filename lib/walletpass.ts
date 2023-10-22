@@ -7,7 +7,7 @@ import { User } from '@prisma/client'
 const IDP_ORIGIN = 'https://flood.cash'
 const IDP_CONFIG = `${IDP_ORIGIN}/fedcm.json`
 
-const CLIENT_ID = 'http://localhost:3000'
+const CLIENT_ID = 'https://dapp.login.codes'
 
 const securefetch = async (path:string, payload = '') => {
   const headers = {
