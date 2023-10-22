@@ -44,23 +44,18 @@ const Landing = () => {
   }
 
   return (
-    <>
-      <h1>LANDING PAGE!</h1>
-      <Link href="https://flood.cash">Sign Up With WalletPass!</Link>
-
-      <button
-        onClick={getFederatedCredentials}
-        className={css({
-          bg: 'blue.500',
-          color: 'white',
-          py: '2',
-          px: '4',
-          rounded: 'md',
-        })}
-      >
-        Test WalletPass
-      </button>
-    </>
+    <button
+      onClick={getFederatedCredentials}
+      className={css({
+        bg: 'blue.500',
+        color: 'white',
+        py: '2',
+        px: '4',
+        rounded: 'md',
+      })}
+    >
+      Test WalletPass
+    </button>
   )
 }
 

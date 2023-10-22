@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { css } from '@styled-system/css'
 import { Box, Flex } from '../components/primitives'
 import Navbar from '../components/navbar'
+import LandingPage from '../components/LandingPage'
 
 const Home = () => (
   <Box
@@ -23,18 +24,9 @@ const Home = () => (
     >
       <Navbar />
       <div className={css({ fontSize: '2xl', fontWeight: 'bold' })}>
-    Hello 🐼!
-    <h1>Pideswap Dapp! WalletPass Demo</h1>
-    <ul>
-      <li>
-        <Link href="/landing">Register</Link>
-      </li>
-      <li>
-        <Link href="/landing">Login</Link>
-      </li>
-    </ul>
-  </div>    
-  </Flex>
+        <LandingPage />
+      </div>
+    </Flex>
   </Box>
 
 )
