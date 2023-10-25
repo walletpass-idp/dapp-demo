@@ -11,7 +11,7 @@
   WalletPass demo Dapp!
 </h1>
 
-
+this repo was forked from the ironsession / authn template here: https://github.com/renchris/app-router-with-webauthn
 
 ## 🤝 WalletPass and NextJS
 
